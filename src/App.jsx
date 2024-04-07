@@ -1,4 +1,5 @@
 import CardTrilha from "./components/CardTrilha"
+import "./App.css"
 
 function App() {
   const listaTrilhas = [
@@ -16,7 +17,8 @@ function App() {
   ]
 
   return (
-    <>
+    <div className="container">
+      <h1 className="titulo">Explore Trilhas Incríveis</h1>
       {
         listaTrilhas.map((trilha, index) =>(
           <CardTrilha dadosTrilha={trilha} key={index} />
@@ -24,7 +26,7 @@ function App() {
         ))
       }
 
-    </>
+    </div>
   )
 }
 
